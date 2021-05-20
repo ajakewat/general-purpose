@@ -10,9 +10,12 @@ print("This is my 2nd git py push ")
 print("This is my 3rd git commit ")
 print("This commit will be pushed directly to master")
 print("This commit will goes to developmet branch")
-# bug in development
+
 
 a = 0
 b = 9
-
-c= b /a
+# try catch block added
+try :
+    c= b /a
+except Exception as e:
+    print("Exception cauught : ",e)
